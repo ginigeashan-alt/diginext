@@ -7,3 +7,7 @@
 
 # Local Claude Code state
 .claude/
+
+# Stray downloads (PNG logos, zips etc. that land in the folder)
+Diginext_logo-removebg*.png
+*.zip
