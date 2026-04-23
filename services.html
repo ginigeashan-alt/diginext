@@ -1450,7 +1450,12 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
    ============================================================= */
 @media (max-width: 900px) {
   .nav__toggle { display: inline-flex; }
-  .nav__inner { grid-template-columns: auto 1fr auto; }
+  .nav__inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .nav__inner > .logo { margin-right: auto; }
   .nav__links {
     display: none;
     position: absolute;
@@ -1573,6 +1578,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 <!-- ========= NAV ========= -->
 <header class="nav">
   <div class="nav__inner">
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+      <span class="nav__toggle-bar"></span>
+    </button>
+
     <a href="index.html" class="logo" aria-label="Diginext Scandinavia">
       <img src="assets/logo.svg" alt="Diginext Scandinavia" class="logo-img" />
     </a>
@@ -1590,9 +1599,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
         Contact Us
         <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </a>
-      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
-        <span class="nav__toggle-bar"></span>
-      </button>
     </div>
   </div>
 </header>
