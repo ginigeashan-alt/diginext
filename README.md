@@ -1,5 +1,7 @@
 # Diginext Scandinavia — Full Website
 
+**Live preview:** https://ginigeashan-alt.github.io/diginext/
+
 Complete multi-page industrial B2B site for a Nordic digital infrastructure company. Six HTML pages sharing a common stylesheet, header, footer and the real Diginext logo.
 
 ## Pages
